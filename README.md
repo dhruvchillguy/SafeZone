@@ -1,24 +1,16 @@
-SafeZone
+# React + Vite
 
-Problem It Solves
-People have no reliable, real time source to know whether an area is safe before they travel. Police data is outdated and not publicly accessible. Google Maps shows roads, not safety. SafeZone fills this gap by letting citizens themselves build a live safety map of their city together.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Project Idea
-SafeZone is a map based web application where people can view and report crimes in their area in real time. If someone spots something suspicious, they can report it in one click and their GPS location gets captured automatically using the browser's built in Geolocation API.
-The map displays color coded zones red for high crime areas, yellow for moderate, and green for safe zones. A live dashboard shows how many incidents happened this week, which areas are the most unsafe, and a heatmap of crime hotspots across the city.
-The core idea is simple if people report together, we build a real and honest picture of the city that neither Google Maps nor official police data ever shows. This helps students, women, and late night commuters make smarter and safer travel decisions.
+Currently, two official plugins are available:
 
-Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-Interactive Map View crime hotspots across the city with color coded red, yellow, and green zones
-Auto Location Capture GPS location is captured automatically when reporting an incident
-One Click Crime Reporting Anonymously report incidents with crime type, description, and location
-Heatmap Overlay Visual heatmap showing density of crimes in different areas
-Live Dashboard Stats on total incidents, most unsafe areas, and crime type breakdown
-Safety Alerts Get a warning when you're entering a red zone
-Area Search Search any location and get its current safety rating
-Filter by Time View crimes reported during day vs night separately
+## React Compiler
 
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Tech Stack
-The frontend is built using React.js with Tailwind CSS for styling. For the interactive map and heatmap visualization, we are using React Leaflet and Leaflet.js. Crime reports are stored and synced in real time using Firebase Firestore. The user's GPS location is captured automatically using the browser's built in Geolocation API. Dashboard charts and graphs are built using Recharts.
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
